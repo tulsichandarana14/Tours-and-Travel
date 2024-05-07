@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Page</title>
+    <style>
+        body {
+            background-color: rosybrown;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            background-color: #222222; 
+            overflow: hidden; 
+            padding: 10px 0; 
+            text-align: center; 
+        }
+
+        .navbar a {
+            color: white; 
+            padding: 14px 20px; 
+            text-decoration: none; 
+            display: inline-block; 
+            margin: 0 10px; 
+            transition: background-color 0.3s; 
+        }
+
+        .navbar a:hover {
+            background-color: #7dbcf4; 
+            border-radius: 5px; 
+        }
+
+        .navbar a.active {
+            background-color: #22b5da; 
+            color: white; 
+        }
+
+        .container {
+            margin: 20px auto;
+            max-width: 600px;
+            background-color: #f9f9f9;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"] {
+            width: calc(100% - 22px);
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            width: 150px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" class="active">Home</a>
+        <a href="about us.html" class="active">About Us</a>
+        <a href="login.html" class="active">Login</a>
+        <a href="registration.html" class="active">Registration</a>
+        <a href="book now.html" class="active">Book Now</a>
+        <a href="contact us.html" class="active">Contact Us</a>
+    </div>
+
+    <div class="container">
+        <h1>Registration Form</h1>
+        <form action="index.html" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="phone">Contact No.</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required>
+
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Enter your country" required>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+</html>
